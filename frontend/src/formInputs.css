@@ -1,0 +1,83 @@
+:root {
+  --padding-left-right: 10px;
+}
+
+.agenda__contact__form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 48px;
+}
+
+/*  */
+
+.agenda__contact__form .container__input {
+  width: 100%;
+  height: 100%;
+  /* display: flex;
+  align-items: flex-start;
+  justify-content: flex-start; */
+}
+
+.agenda__contact__form .container__input .items {
+  position: relative;
+}
+
+.agenda__contact__form .container__input .items input {
+  outline: none;
+  border-radius: 0;
+  border: 0;
+  border-bottom: 1.5px solid rgb(0, 0, 0, 0.4);
+  height: 40px;
+  width: 100% !important;
+  padding: 0 var(--padding-left-right);
+  font-size: 14px;
+  background: transparent;
+}
+
+/*  */
+
+.placeholder__movement {
+  position: absolute;
+  top: 50%;
+  left: var(--padding-left-right);
+  transform: translate(0, -50%);
+  font-size: 14px;
+  color: rgb(0, 0, 0, 0.5);
+  pointer-events: none;
+  transition: all 170ms ease;
+}
+
+.agenda__contact__form .container__input .items input:focus + .placeholder,
+.active {
+  top: -15px;
+  left: 2px;
+  color: #000;
+  font-size: 14px;
+}
+
+.active {
+  top: -15px;
+  left: 2px;
+  color: #000;
+  font-size: 14px;
+}
+
+.agenda__contact__form .container__input .items::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 1.5px;
+  background: hsl(200, 60%, 70%);
+  transform-origin: left;
+  transition: all 200ms ease;
+  transform: scaleX(0%);
+}
+
+.agenda__contact__form .container__input .items:focus-within::after {
+  transform: scaleX(100%);
+}
