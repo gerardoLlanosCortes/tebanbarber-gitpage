@@ -4,8 +4,8 @@ const allowedOrigins = [
   "http://localhost:5174",
   "https://latebanbarber.com",
   "https://www.latebanbarber.com",
-  "https://tebanbaerbartest.000webhostapp.com",
-  "https://www.tebanbaerbartest.000webhostapp.com",
+  "https://tebanbarber-gitpage.onrender.com",
+  "https://www.tebanbarber-gitpage.onrender.com",
 ];
 export const corsOptions = {
   origin: allowedOrigins,
