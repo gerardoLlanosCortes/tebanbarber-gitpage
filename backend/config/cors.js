@@ -8,6 +8,9 @@ const allowedOrigins = [
   "https://www.tebanbarber-gitpage.vercel.app.com",
   "https://tebanbarber-gitpage.vercel.app/",
   "https:///www.tebanbarber-gitpage.vercel.app/",
+  "https:///www.tebanbarber-gitpage.vercel.app/",
+  "https://tebanbarber-gitpage.vercel.app",
+  "https:///www.tebanbarber-gitpage.vercel.app",
 ];
 export const corsOptions = {
   origin: allowedOrigins,
