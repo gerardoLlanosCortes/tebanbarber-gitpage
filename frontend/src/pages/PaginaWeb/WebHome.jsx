@@ -9,6 +9,7 @@ import useServicios from "../../hooks/useServicios";
 import useProductos from "../../hooks/useProductos";
 import ModalProducto from "../../components/Pagina/Modal/ModalProducto";
 import Polvo from "../../assets/img/pagina/polvo.jpg";
+import { Link } from "react-router-dom";
 
 export default function WebHome() {
   const { getServicios, servicios } = useServicios();
@@ -45,6 +46,8 @@ export default function WebHome() {
         <Resenas />
 
         <Galeria />
+
+        <Link to={"/barbero"}>barbero</Link>
 
         {showProductModal && (
           <ModalProducto
