@@ -4,8 +4,8 @@ const allowedOrigins = [
   "http://localhost:5174",
   "https://latebanbarber.com",
   "https://www.latebanbarber.com",
-  "https://tebanbarber-gitpage.onrender.com",
-  "https://www.tebanbarber-gitpage.onrender.com",
+  "https://tebanbarber-gitpage.vercel.app.com",
+  "https://www.tebanbarber-gitpage.vercel.app.com",
 ];
 export const corsOptions = {
   origin: allowedOrigins,
